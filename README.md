@@ -1,6 +1,8 @@
-# GitHub Uscder Search
+# GitHub User Search
 
-Project is currently under development!
+- Project is currently under development!
+
+- Search profiles from GitHub user API
 
 ## Available Scripts
 
