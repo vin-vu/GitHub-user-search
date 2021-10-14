@@ -1,7 +1,8 @@
 import "./App.css";
 import "./Header.js";
-import Profile from "./Profile";
 import { useEffect, useState } from "react";
+import Profile from "./Profile";
+import Header from "./Header";
 
 function App() {
   const [user, setUser] = useState("");
@@ -39,10 +40,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="header">
-        <h4>devfinder</h4>
-        <h4>toggle</h4>
-      </div>
+      <Header />
       <Profile
         name={user.name}
         login={user.login}
