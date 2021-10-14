@@ -1,0 +1,21 @@
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-container {
+  width: 550px;
+  display: flex;
+}
+
+.profile-picture {
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+.profile-info {
+  padding-top: 5px;
+  padding-left: 25px;
+}

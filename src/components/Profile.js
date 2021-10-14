@@ -14,11 +14,15 @@ function Profile({
   blog,
   company,
 }) {
-
   return (
-    <>
-      <p>{name}</p>
-    </>
+    <div className="profile-container">
+      <div className="profile-picture">
+        <img src={avatar} alt="avatar"/>
+      </div>
+      <div className="profile-info">
+        <p>{name}</p>
+      </div>
+    </div>
   );
 }
 

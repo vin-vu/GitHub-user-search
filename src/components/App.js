@@ -16,22 +16,22 @@ function App() {
     }
   }
 
-  const userData = {
-    name: user.name,
-    login: user.login,
-    avatar: user.avatar_url,
-    join: user.join,
-    created_at: user.created_at,
-    bio: user.bio,
-    public_repos: user.public_repos,
-    followers: user.followers,
-    location: user.location,
-    twitter_username: user.twitter_username,
-    blog: user.blog,
-    company: user.company,
-  };
+  // const userData = {
+  //   name: user.name,
+  //   login: user.login,
+  //   avatar: user.avatar_url,
+  //   join: user.join,
+  //   created_at: user.created_at,
+  //   bio: user.bio,
+  //   public_repos: user.public_repos,
+  //   followers: user.followers,
+  //   location: user.location,
+  //   twitter_username: user.twitter_username,
+  //   blog: user.blog,
+  //   company: user.company,
+  // };
 
-  console.log("userdata", userData);
+  // console.log("userdata", userData);
 
   useEffect(() => {
     fetchUser();
