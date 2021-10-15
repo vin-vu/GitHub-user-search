@@ -9,6 +9,7 @@ function Profile({
   bio,
   repos,
   followers,
+  following,
   location,
   twitter,
   blog,

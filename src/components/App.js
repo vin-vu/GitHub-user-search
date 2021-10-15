@@ -16,9 +16,12 @@ function App() {
       console.error(error);
     }
   }
+
   useEffect(() => {
     fetchUser();
   }, []);
+
+  console.log(user)
 
   return (
     <div className="App">
@@ -31,6 +34,7 @@ function App() {
         bio={user.bio}
         repos={user.public_repos}
         followers={user.followers}
+        following={user.following}
         location={user.location}
         twitter={user.twitter_username}
         blog={user.blog}
