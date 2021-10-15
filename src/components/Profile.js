@@ -1,10 +1,10 @@
 import "./Profile.css";
+import UserHeader from "./UserHeader";
 
 function Profile({
   name,
   login,
   avatar,
-  join,
   created_at,
   bio,
   repos,
@@ -20,7 +20,12 @@ function Profile({
         <img src={avatar} alt="avatar"/>
       </div>
       <div className="profile-info">
-        <p>{name}</p>
+        <UserHeader 
+          name={name}
+          login={login}
+          created_at={created_at}
+          bio={bio}
+        />
       </div>
     </div>
   );

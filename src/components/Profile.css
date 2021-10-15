@@ -8,14 +8,17 @@ img {
 .profile-container {
   width: 550px;
   display: flex;
+  align-items: stretch;
 }
 
 .profile-picture {
+  display: flex;
+  justify-content: center;
+  flex: 1;
   padding-top: 25px;
-  padding-left: 25px;
 }
 
 .profile-info {
+  flex: 2;
   padding-top: 5px;
-  padding-left: 25px;
 }
