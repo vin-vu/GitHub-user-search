@@ -1,0 +1,19 @@
+/* .user-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-stats-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-stats-data {
+  display: flex;
+  justify-content: space-around;
+} */
+
+.user-stats {
+  display: flex;
+  justify-content: space-around;
+}

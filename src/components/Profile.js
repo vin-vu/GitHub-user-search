@@ -1,5 +1,6 @@
 import "./Profile.css";
 import UserHeader from "./UserHeader";
+import UserStats from "./UserStats";
 
 function Profile({
   name,
@@ -26,6 +27,11 @@ function Profile({
           login={login}
           created_at={created_at}
           bio={bio}
+        />
+        <UserStats
+          repos={repos}
+          followers={followers}
+          following={following}        
         />
       </div>
     </div>
