@@ -6,6 +6,7 @@
 
 .name-date > p {
   display: flex;
+  margin-right: 30px;
 }
 
 .login > p {

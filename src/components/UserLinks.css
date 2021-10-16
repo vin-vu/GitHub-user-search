@@ -1,0 +1,17 @@
+.user-links {
+  display: flex;
+  width: 300px;
+}
+
+.location-blog {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+}
+
+.twitter-company {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}

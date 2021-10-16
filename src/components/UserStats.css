@@ -16,4 +16,9 @@
 .user-stats {
   display: flex;
   justify-content: space-around;
+  border-radius: 10px;
+  background-color: rgb(53, 53, 53);
+  margin-right: 30px;
 }
+
+

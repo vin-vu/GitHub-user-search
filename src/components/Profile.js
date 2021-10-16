@@ -1,6 +1,7 @@
 import "./Profile.css";
 import UserHeader from "./UserHeader";
 import UserStats from "./UserStats";
+import UserLinks from "./UserLinks";
 
 function Profile({
   name,
@@ -33,6 +34,12 @@ function Profile({
           followers={followers}
           following={following}        
         />
+      <UserLinks 
+        location={location}
+        twitter={twitter}
+        blog={blog}
+        company={company}
+      />
       </div>
     </div>
   );
