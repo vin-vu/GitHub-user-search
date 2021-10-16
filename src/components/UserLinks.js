@@ -4,8 +4,8 @@ function UserLinks({location, twitter, blog, company}) {
   return (
     <div className="user-links">
       <div className="location-blog">
-        <p>{location}</p>
-        <p>{blog}</p>
+        <p>{location ? location : 'Not available'}</p>
+        <p>{blog ? blog : 'Not available'}</p>
       </div>
       <div className="twitter-company">
         <p>{twitter ? twitter : 'Not available'}</p>
