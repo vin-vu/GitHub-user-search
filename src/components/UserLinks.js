@@ -1,4 +1,5 @@
 import './UserLinks.css';
+import LocationIcon from '../icon-components/LocationIcon';
 
 function UserLinks({location, twitter, blog, company}) {
   return (
@@ -8,10 +9,16 @@ function UserLinks({location, twitter, blog, company}) {
         <p>{blog ? blog : 'Not available'}</p>
       </div>
       <div className="twitter-company">
-        <p>{twitter ? twitter : 'Not available'}</p>
+        <div className="twitter">
+          <LocationIcon />
+          <p>{twitter ? twitter : 'Not available'}</p>
+        </div>
         <p>{company ? company : 'Not available'}</p>
       </div>
+
+
     </div>
+    
   )
 }
 
