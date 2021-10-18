@@ -1,13 +1,13 @@
 .user-links {
   display: flex;
   width: 300px;
+  column-gap: 20px;
 }
 
 .location-blog {
   display: flex;
   flex: 1;
   flex-direction: column;
-
 }
 
 .twitter-company {
@@ -16,6 +16,17 @@
   flex-direction: column;
 }
 
-.twitter {
+.twitter,
+.location,
+.blog,
+.company {
   display: flex;
+  align-items: center;
+}
+
+.twitter > svg,
+.location > svg,
+.blog > svg,
+.company > svg {
+  padding-right: 10px;
 }
