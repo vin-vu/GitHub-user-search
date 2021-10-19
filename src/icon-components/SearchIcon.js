@@ -1,8 +1,8 @@
 function SearchIcon() {
   return (
     <svg
-      width="12"
-      height="12"
+      width="16"
+      height="16"
       xmlns="http://www.w3.org/2000/svg"
       fill-rule="evenodd"
       clip-rule="evenodd"

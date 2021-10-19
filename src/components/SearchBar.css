@@ -1,5 +1,6 @@
 .searchbar-container {
-  display:flex;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 550px;
   height: 40px;
@@ -7,10 +8,33 @@
   border-radius: 10px;
 }
 
+.icon-input-container {
+  display: flex;
+  margin-left: 20px;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #0079ff;
+  height: 30px;
+  width: 75px;
+}
+
+
+/* .searchbar-container > svg {
+  margin-left: 20px;
+  margin-right: 5px;
+} */
+
 .search-input {
   display: flex;
   background-color: transparent;
   border: none;
   outline: none;
-  width: 200px;
+  width: 425px;
 }
