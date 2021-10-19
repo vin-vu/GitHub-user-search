@@ -3,6 +3,7 @@ import "./Header.js";
 import { useEffect, useState } from "react";
 import Profile from "./Profile";
 import Header from "./Header";
+import SearchBar from "./SearchBar";
 
 function App() {
   const [user, setUser] = useState("");
@@ -26,6 +27,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <SearchBar />
       <Profile
         name={user.name}
         login={user.login}

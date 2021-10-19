@@ -1,0 +1,16 @@
+.searchbar-container {
+  display:flex;
+  align-items: center;
+  width: 550px;
+  height: 40px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+}
+
+.search-input {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 200px;
+}
