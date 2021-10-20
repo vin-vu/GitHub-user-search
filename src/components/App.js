@@ -7,10 +7,13 @@ import SearchBar from "./SearchBar";
 
 function App() {
   const [user, setUser] = useState("");
+  const [parentSearch, setParentSearch] = useState("vin-vu");
 
-  async function fetchUser() {
+  console.log(parentSearch)
+
+  async function fetchUser(parentSearch) {
     try {
-      const res = await fetch("https://api.github.com/users/vin-vu");
+      const res = await fetch(`https://api.github.com/users/vin-vu`);
       const data = await res.json();
       setUser(data);
     } catch (error) {
@@ -22,12 +25,10 @@ function App() {
     fetchUser();
   }, []);
 
-  console.log(user)
-
   return (
     <div className="App">
       <Header />
-      <SearchBar />
+      <SearchBar search={setParentSearch}/>
       <Profile
         name={user.name}
         login={user.login}
