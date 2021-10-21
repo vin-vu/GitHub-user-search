@@ -6,29 +6,52 @@ import Header from "./Header";
 import SearchBar from "./SearchBar";
 
 function App() {
-  const [user, setUser] = useState("");
-  const [parentSearch, setParentSearch] = useState("vin-vu");
+  const [user, setUser] = useState("vin-vu");
+  const [search, setSearch] = useState("");
 
-  console.log(parentSearch)
+  console.log('search', search);
+  console.log('user', user)
 
-  async function fetchUser(parentSearch) {
-    try {
-      const res = await fetch(`https://api.github.com/users/vin-vu`);
-      const data = await res.json();
-      setUser(data);
-    } catch (error) {
-      console.error(error);
-    }
-  }
+    // onsubmit doesn't make call to api?
+  // async function fetchUser() {
+  //   try {
+  //     const res = await fetch(`https://api.github.com/users/${user}`);
+  //     const data = await res.json();
+  //     setUser(data);
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('submit', search)
+    setUser(search);
+  };
 
   useEffect(() => {
+    async function fetchUser() {
+      try {
+        const res = await fetch(`https://api.github.com/users/${user}`);
+        const data = await res.json();
+        setUser(data);
+      } catch (error) {
+        console.error(error);
+      }
+    }
     fetchUser();
-  }, []);
+  }, [user]);
 
   return (
     <div className="App">
       <Header />
-      <SearchBar search={setParentSearch}/>
+      <SearchBar
+        // search={setUser}
+        value={search}
+        // type="text"
+        onChange={(e) => setSearch(e.target.value)}
+        onSubmit={handleSubmit}
+      />
       <Profile
         name={user.name}
         login={user.login}

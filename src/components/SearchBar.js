@@ -1,25 +1,26 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./SearchBar.css";
 import SearchIcon from "../icon-components/SearchIcon";
 
-function SearchBar({ search }) {
-  const [input, setInput] = useState("");
-  
+function SearchBar(props) {
+  // const [input, setInput] = useState("");
+
   return (
     <>
       <div className="searchbar-container">
         <div className="icon-input-container">
           <SearchIcon />
-          <form>
+          <form onSubmit={props.onSubmit}>
             <input
               className="search-input"
               type="text"
+              // onChange={(e) => setInput(e.target.value)}
               placeholder="Search GitHub Username..."
-              onChange={(e) => setInput(e.target.value)}
+              {...props}
             />
           </form>
         </div>
-        <button className="search-btn" type="submit" onClick={search(input)}>
+        <button className="search-btn" type="submit">
           Search
         </button>
       </div>
