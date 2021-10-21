@@ -6,18 +6,18 @@ import Header from "./Header";
 import SearchBar from "./SearchBar";
 
 function App() {
-  const [user, setUser] = useState("vin-vu");
-  const [search, setSearch] = useState("");
+  const [user, setUser] = useState("");
+  const [search, setSearch] = useState("vin-vu");
 
   console.log('search', search);
   console.log('user', user)
 
-    // onsubmit doesn't make call to api?
   // async function fetchUser() {
   //   try {
-  //     const res = await fetch(`https://api.github.com/users/${user}`);
-  //     const data = await res.json();
-  //     setUser(data);
+  //     // const res = await fetch(`https://api.github.com/users/${search}`);
+  //     // const data = await res.json();
+  //     const data1 = {name: `${search}`}
+  //     setUser(data1);
   //   } catch (error) {
   //     console.error(error);
   //   }
@@ -27,12 +27,12 @@ function App() {
     e.preventDefault();
     console.log('submit', search)
     setUser(search);
-  };
+  };  
 
   useEffect(() => {
     async function fetchUser() {
       try {
-        const res = await fetch(`https://api.github.com/users/${user}`);
+        const res = await fetch(`https://api.github.com/users/${search}`);
         const data = await res.json();
         setUser(data);
       } catch (error) {
@@ -40,7 +40,7 @@ function App() {
       }
     }
     fetchUser();
-  }, [user]);
+  }, [search]);
 
   return (
     <div className="App">
