@@ -1,9 +1,7 @@
-// import { useState } from "react";
 import "./SearchBar.css";
 import SearchIcon from "../icon-components/SearchIcon";
 
 function SearchBar(props) {
-  // const [input, setInput] = useState("");
 
   return (
     <>
@@ -18,11 +16,11 @@ function SearchBar(props) {
               placeholder="Search GitHub Username..."
               {...props}
             />
+            <button className="search-btn" type="submit">
+              Search
+            </button>
           </form>
         </div>
-        <button className="search-btn" type="submit">
-          Search
-        </button>
       </div>
     </>
   );
