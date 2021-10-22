@@ -6,7 +6,6 @@ function SearchBar(props) {
   return (
     <>
       <div className="searchbar-container">
-        <div className="icon-input-container">
           <SearchIcon />
           <form onSubmit={props.onSubmit}>
             <input
@@ -20,7 +19,6 @@ function SearchBar(props) {
               Search
             </button>
           </form>
-        </div>
       </div>
     </>
   );
