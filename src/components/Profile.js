@@ -1,4 +1,4 @@
-import "./Profile.css";
+import "../styles/Profile.css";
 import UserHeader from "./UserHeader";
 import UserStats from "./UserStats";
 import UserLinks from "./UserLinks";
@@ -20,26 +20,22 @@ function Profile({
   return (
     <div className="profile-container">
       <div className="profile-picture">
-        <img src={avatar} alt="avatar"/>
+        <img src={avatar} alt="avatar" />
       </div>
       <div className="profile-info">
-        <UserHeader 
+        <UserHeader
           name={name}
           login={login}
           created_at={created_at}
           bio={bio}
         />
-        <UserStats
-          repos={repos}
-          followers={followers}
-          following={following}        
+        <UserStats repos={repos} followers={followers} following={following} />
+        <UserLinks
+          location={location}
+          twitter={twitter}
+          blog={blog}
+          company={company}
         />
-      <UserLinks 
-        location={location}
-        twitter={twitter}
-        blog={blog}
-        company={company}
-      />
       </div>
     </div>
   );

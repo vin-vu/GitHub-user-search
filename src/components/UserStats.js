@@ -1,6 +1,6 @@
-import "./UserStats.css";
+import "../styles/UserStats.css";
 
-function UserStats({repos, followers, following}) {
+function UserStats({ repos, followers, following }) {
   return (
     <div className="user-stats">
       <div className="repo">
@@ -16,7 +16,7 @@ function UserStats({repos, followers, following}) {
         <p className="repo-data">{following}</p>
       </div>
     </div>
-  )
+  );
 }
 
 export default UserStats;

@@ -1,4 +1,4 @@
-import "./UserLinks.css";
+import "../styles/UserLinks.css";
 import TwitterIcon from "../icon-components/TwitterIcon";
 import LocationIcon from "../icon-components/LocationIcon";
 import BlogIcon from "../icon-components/BlogIcon";
