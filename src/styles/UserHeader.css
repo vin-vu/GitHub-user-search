@@ -21,9 +21,10 @@ p.date {
   margin-bottom: 0px;
 }
 
-.login > p {
+a.username {
   margin-top: 0px;
   margin-bottom: 20px;
+  color: #0079ff;
 }
 
 .bio > p {

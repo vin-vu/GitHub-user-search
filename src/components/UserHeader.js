@@ -11,7 +11,14 @@ function UserHeader({ name, login, created_at, bio }) {
         )}`}</p>
       </div>
       <div className="login">
-        <p>@{login}</p>
+        <a
+          className="username"
+          href={`https://github.com/${login}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          @{login}
+        </a>
       </div>
       <div className="bio">
         <p>{bio ? bio : "This profile has no bio"}</p>

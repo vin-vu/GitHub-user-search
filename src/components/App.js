@@ -28,7 +28,7 @@ function App() {
     }
     fetchUser();
   }, [user]);
-
+  console.log(profile)
   return (
     <div className="App">
       <Header />

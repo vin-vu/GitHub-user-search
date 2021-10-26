@@ -6,4 +6,7 @@
   margin-right: 30px;
 }
 
-
+p.repo-data {
+  font-weight: bold;
+  font-size: 120%;
+}
