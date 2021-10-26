@@ -13,13 +13,13 @@
 }
 
 form {
- display: flex;
- justify-content: space-between;
- width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 input {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 }
 
 ::placeholder {
@@ -36,7 +36,7 @@ input {
 }
 
 .search-btn {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,4 +47,31 @@ input {
   height: 30px;
   width: 65px;
   font-size: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.search-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.search-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -8px;
+  transition: 0.5s;
+}
+
+.search-btn:hover span {
+  padding-right: 15px;
+}
+
+.search-btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }

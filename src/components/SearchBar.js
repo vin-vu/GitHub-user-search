@@ -15,7 +15,8 @@ function SearchBar({value, onChange, onSubmit}) {
           onSubmit={onSubmit}
         />
         <button className="search-btn" type="submit">
-          Search
+          <span>Search</span>
+          
         </button>
       </form>
     </div>
