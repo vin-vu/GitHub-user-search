@@ -20,6 +20,11 @@ p {
 
 .blog-name {
   color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .twitter-company {
@@ -31,6 +36,7 @@ p {
 
 .twitter-name {
   color: white;
+  text-decoration: none;
 }
 
 .company-name {

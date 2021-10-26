@@ -1,12 +1,33 @@
 .user-stats {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   border-radius: 10px;
   background-color: #141d2f;
   margin-right: 30px;
+  height: 75px;
 }
 
-p.repo-data {
+p.repo-data,
+p.followers-data,
+p.following-data {
   font-weight: bold;
   font-size: 120%;
 }
+
+.repo {
+  display: flex;
+  flex-direction: column;
+}
+
+.followers {
+  display: flex;
+  flex-direction: column;
+}
+
+.following {
+  display: flex;
+  flex-direction: column;
+}
+
+

@@ -8,12 +8,12 @@ function UserStats({ repos, followers, following }) {
         <p className="repo-data">{repos}</p>
       </div>
       <div className="followers">
-        <p className="repo-header">Followers</p>
-        <p className="repo-data">{followers}</p>
+        <p className="followers-header">Followers</p>
+        <p className="followers-data">{followers}</p>
       </div>
       <div className="following">
-        <p className="repo-header">Following</p>
-        <p className="repo-data">{following}</p>
+        <p className="following-header">Following</p>
+        <p className="following-data">{following}</p>
       </div>
     </div>
   );
