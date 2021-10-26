@@ -6,19 +6,21 @@
 
 .name-date > p {
   display: flex;
-  align-items: flex-end;
-  margin-right: 30px;
+  align-items: center;
 }
 
 p.name {
   display: flex;
   font-size: 200%;
   margin-bottom: 0px;
+  /* align-content: flex-end; */
 }
 
 p.date {
   display: flex;
   margin-bottom: 0px;
+  margin-right: 30px;
+
 }
 
 a.username {
@@ -28,5 +30,6 @@ a.username {
 }
 
 .bio > p {
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }

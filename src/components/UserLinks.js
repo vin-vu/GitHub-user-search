@@ -30,10 +30,7 @@ function UserLinks({ location, twitter, blog, company }) {
         </div>
         <div className="company" style={{ opacity: company ? null : 0.5 }}>
           <CompanyIcon />
-          {/* <p>{company ? company : "Not available"}</p> */}
-          <a className="company-name" href={company} target="_blank" rel="noreferrer">
-            {company ? company : "Not available"}
-          </a>
+          <p>{company ? company : "Not available"}</p>
         </div>
       </div>
     </div>
