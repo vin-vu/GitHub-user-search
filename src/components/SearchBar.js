@@ -1,16 +1,18 @@
 import "../styles/SearchBar.css";
 import SearchIcon from "../icon-components/SearchIcon";
 
-function SearchBar(props) {
+function SearchBar({value, onChange, onSubmit}) {
   return (
     <div className="searchbar-container">
       <SearchIcon />
-      <form onSubmit={props.onSubmit}>
+      <form onSubmit={onSubmit}>
         <input
           className="search-input"
           type="text"
           placeholder="Search GitHub Username..."
-          {...props}
+          value={value}
+          onChange={onChange}
+          onSubmit={onSubmit}
         />
         <button className="search-btn" type="submit">
           Search

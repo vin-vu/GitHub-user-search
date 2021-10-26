@@ -10,10 +10,6 @@
   margin-right: 30px;
 }
 
-/* .login > p {
-  margin-top: -10px;
-} */
-
 p.name {
   display: flex;
   font-size: 200%;
@@ -23,4 +19,13 @@ p.name {
 p.date {
   display: flex;
   margin-bottom: 0px;
+}
+
+.login > p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.bio > p {
+  margin-bottom: 20px;
 }
