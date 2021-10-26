@@ -5,8 +5,8 @@ function UserHeader({ name, login, created_at, bio }) {
   return (
     <>
       <div className="name-date">
-        <p>{name}</p>
-        <p>{`Joined ${DateTime.fromISO(created_at).toFormat(
+        <p className="name">{name}</p>
+        <p className="date">{`Joined ${DateTime.fromISO(created_at).toFormat(
           "dd LLL yyyy"
         )}`}</p>
       </div>
