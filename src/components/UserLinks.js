@@ -14,17 +14,26 @@ function UserLinks({ location, twitter, blog, company }) {
         </div>
         <div className="blog" style={{ opacity: blog ? null : 0.5 }}>
           <BlogIcon />
-          <p>{blog ? blog : "Not available"}</p>
+          {/* <p>{blog ? blog : "Not available"}</p> */}
+          <a className="blog-name" href={blog} target="_blank" rel="noreferrer">
+            {blog ? blog : "Not available"}
+          </a>
         </div>
       </div>
       <div className="twitter-company">
         <div className="twitter" style={{ opacity: twitter ? null : 0.5 }}>
           <TwitterIcon />
-          <p>{twitter ? twitter : "Not available"}</p>
+          {/* <p>{twitter ? twitter : "Not available"}</p> */}
+          <a className="twitter-name" href={twitter} target="_blank" rel="noreferrer">
+            {twitter ? twitter : "Not available"}
+          </a>
         </div>
         <div className="company" style={{ opacity: company ? null : 0.5 }}>
           <CompanyIcon />
-          <p>{company ? company : "Not available"}</p>
+          {/* <p>{company ? company : "Not available"}</p> */}
+          <a className="company-name" href={company} target="_blank" rel="noreferrer">
+            {company ? company : "Not available"}
+          </a>
         </div>
       </div>
     </div>
