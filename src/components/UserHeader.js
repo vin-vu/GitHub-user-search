@@ -21,7 +21,7 @@ function UserHeader({ name, login, created_at, bio }) {
         </a>
       </div>
       <div className="bio">
-        <p>{bio ? bio : "This profile has no bio"}</p>
+        <p>{bio ? bio : "- no bio provided -"}</p>
       </div>
     </>
   );

@@ -11,9 +11,8 @@
 
 p.name {
   display: flex;
-  font-size: 200%;
+  font-size: 175%;
   margin-bottom: 0px;
-  /* align-content: flex-end; */
 }
 
 p.date {
@@ -27,6 +26,11 @@ a.username {
   margin-top: 0px;
   margin-bottom: 20px;
   color: #0079ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .bio > p {
