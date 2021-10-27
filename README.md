@@ -1,15 +1,27 @@
-# GitHub User Search
+# devfinder
 
-- Project is currently under development!
+![devfinder Logo](/public/devfinder.jpg)
 
-- Search profiles from GitHub user API
+## Overview
 
-## Available Scripts
+devfinder is a GitHub user search app that uses the GitHub users API to look up profiles
 
-In the project directory, you can run:
+### Features
 
-### `npm start`
+Upon searching a user, a variety of information will be displayed. Click the @user to see the user's GitHub profile. User stats such as repo, followers, and following count will be revealed. Additional info below include links from the user.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Built with
+- [React](https://reactjs.org/) - JS Library
+- Semantic HTML5 markup
+- CSS Flexbox
+- [Luxon](https://moment.github.io/luxon/#/) - Wrapper for handling JS dates and times
+- [GitHub API](https://docs.github.com/en/rest/reference/users)
+
+### Features to be implemented
+- Light/Dark mode toggle (app is currently in dark mode only)
+
+## Try devfinder here!
+http://vin-vu.github.io/GitHub-user-search
+
+
 
