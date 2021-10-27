@@ -1,6 +1,6 @@
 {
-  "homepage": "http://vin-vu.github.io/devfinder",
-  "name": "github-user-search",
+  "homepage": "https://vin-vu.github.io/devfinder",
+  "name": "devfinder",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

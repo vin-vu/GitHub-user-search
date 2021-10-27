@@ -21,7 +21,7 @@ Upon searching a user, a variety of information will be displayed. Click the @us
 - Light/Dark mode toggle (app is currently in dark mode only)
 
 ## Try devfinder here!
-http://vin-vu.github.io/devfinder
+https://vin-vu.github.io/devfinder
 
 
 
