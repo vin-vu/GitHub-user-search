@@ -9,7 +9,7 @@ function SearchBar({ value, onChange, onSubmit }) {
         <input
           className="search-input"
           type="text"
-          placeholder="Search GitHub Username..."
+          placeholder="Search GitHub Username.."
           value={value}
           onChange={onChange}
           onSubmit={onSubmit}

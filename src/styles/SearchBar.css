@@ -20,6 +20,7 @@ form {
 
 input {
   font-family: "Space Mono", monospace;
+  color: white;
 }
 
 ::placeholder {
@@ -56,6 +57,7 @@ input {
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  color: white;
 }
 
 .search-btn span:after {
