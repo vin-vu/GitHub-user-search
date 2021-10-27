@@ -1,7 +1,7 @@
 import "../styles/SearchBar.css";
 import SearchIcon from "../icon-components/SearchIcon";
 
-function SearchBar({value, onChange, onSubmit}) {
+function SearchBar({ value, onChange, onSubmit }) {
   return (
     <div className="searchbar-container">
       <SearchIcon />
@@ -16,7 +16,6 @@ function SearchBar({value, onChange, onSubmit}) {
         />
         <button className="search-btn" type="submit">
           <span>Search</span>
-          
         </button>
       </form>
     </div>
